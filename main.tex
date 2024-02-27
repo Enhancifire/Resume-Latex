@@ -1,0 +1,313 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaishanth
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}%\setmainfont{Times New Roman}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{cochineal}
+% \usepackage{fourier}
+
+% \usepackage{fontspec}
+% \usepackage{polyglossia}
+% \setmainlanguage{german}
+% \setmainfont{Times New Roman}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSingleSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------\usepackage{fontspec}
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+
+
+\begin{center}
+    {\huge Faiz Saiyad} \\ \vspace{2pt}
+    {+91 8177941560} ~
+    \small{-}
+    % \href{https://enhancifire.github.io}{\color{blue}{Portfolio}} ~
+    % \small{-}
+    \href{mailto:[fsaiyad990@gmail.com]}{\color{blue}{fsaiyad990@gmail.com}} ~
+    \small{-}
+    \href{https://linkedin.com/in/faiz-saiyad}{ \color{blue}{LinkedIn}}  ~
+    \small{-}
+    \href{https://github.com/Enhancifire}{ \color{blue}{Github}} ~
+    \vspace{-7pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\color{airforceblue}EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vishwakarma Institute of Information Technology}{Pune, Maharashtra, India}
+      {B.Tech. in Artificial Intelligence and Data Science}{2020 - 2024}
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\color{airforceblue}TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{Dart, Python, Go, Lua}} \\
+      \vspace{1.2pt}
+
+     \textbf{\normalsize{Frameworks and Libraries:}}{ \normalsize{Flutter, Django, FastAPI}} \\
+      \vspace{1.2pt}
+
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{Git, Docker, Linux, Neovim}} \\
+      \vspace{1.2pt}
+
+     \textbf{\normalsize{Platforms:}}{ \normalsize{Firebase, Supabase, Heroku, Render, Google Cloud Platform (GCP)}}
+
+     % copy and paste above textbf block to add more
+     }}
+ \end{itemize}
+ \vspace{-16pt}
+
+ %-----------EXPERIENCE-----------
+\section{\color{airforceblue}WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer}{}
+      {Atomic Loops, Pune, India}{Jun 2023 - Feb 2024}
+      \resumeItemListStart
+            \resumeItem{\normalsize{Played a pivotal role in developing cutting edge AI based client applications}}
+            \resumeItem{\normalsize{Improved load-times in EngenZ Application by 63\%}}
+            \resumeItem{\normalsize{Wrote custom libraries for interfacing with RocketChat}}
+            \resumeItem{\normalsize{Presented and demonstrated the application to clients and stakeholders}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Freelance Applications Developer}{}
+      {Faizlabs}{Mar 2021 - Jan 2023}
+      \resumeItemListStart
+            \resumeItem{\normalsize{Developed and Delivered multiple applications to businesses and individuals}}
+            \resumeItem{\normalsize{Developed highly scalable and efficient backend systems}}
+            % \resumeItem{\normalsize{Improved workflow of a client by 30\%}}
+            \resumeItem{\normalsize{Clients: Zariya Matrimony, Rehnuma Pharmacy, and 3 more}}
+      \resumeItemListEnd
+    %
+    % \resumeSubheading
+    %   {Job 3 Title}{}
+    %   {Company Name, State, Country}{Month Year - Month Year}
+    %   \resumeItemListStart
+    %         \resumeItem{\normalsize{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo eget nunc ultricies congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.}}
+    %         \resumeItem{\normalsize{nteger hendrerit semper velit, non vehicula nibh feugiat nec. Vivamus nec consequat nisi. Suspendisse potenti. Sed consectetur elit sed aliquam eleifend.}}
+    %         \resumeItem{\normalsize{Sed nec quam et urna placerat placerat. Aenean at mi id nunc venenatis feugiat}}
+    %   \resumeItemListEnd
+
+    % copy and paste above resumeSubheading block to add more
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+ %-----------PROJECTS-----------
+% \section{\color{airforceblue} PROJECTS}
+\section{\color{airforceblue} PROJECTS}
+    \resumeItemListStart
+        \vspace{0.5pt}
+        \resumeItem{\normalsize{\textbf{NoMo - No Money} -
+        \href{https://play.google.com/store/apps/details?id=com.atomicloops.nomo}{\color{blue}\underline{Play Store Link}}} \\
+        - Developed under Atomic Loops. \\
+        - Spearheaded API integration for NoMo, a pioneering mobile app promoting item bartering over traditional transactions. \\
+        - Played a pivotal role in optimizing the app’s performance and user interface in Flutter. \\
+        - Wrote custom library to interface with RocketChat Chat Service. \\
+        }
+        \vspace{-5pt}
+
+        \resumeItem{\normalsize{\textbf{Engenz - Learning for the GenZ}
+        \href{[url to project demo]}{\color{blue}\underline{}}} \\
+        - Developed under Atomic Loops. \\
+        - Developed EngenZ, a mobile app that provides a platform for students to learn and grow through AI-based personalized learning experiences. \\
+        - Implemented custom solution to reduce video load times by 63\%. \\
+        }
+        \vspace{-5pt}
+
+        \resumeItem{\normalsize{\textbf{AshramAI - AI Guided Yoga}
+        \href{[url to github repo]}{\color{blue}\underline{}}} \\
+        - Developed under Atomic Loops. \\
+        - Migrated AshramAI codebase to Flutter, focusing on an intuitive AI-guided yoga and meditation experience. \\
+        - Elevated user engagement, positioning AshramAI as a premier app for guided wellness practices. \\
+        }
+        \vspace{-5pt}
+
+        \resumeItem{\normalsize{\textbf{Nighters - The Nightlife Network} -
+        \href{https://play.google.com/store/apps/details?id=org.nighters.NightersApp}{\color{blue}\underline{Play Store Link}}} \\
+        - Developed under Atomic Loops. \\
+        - Contributed to the development of Nighters, a social app people for people craving nightlife experiences. \\
+        - Localised the app for French audience. \\
+        }
+
+        % copy and paste above resumeItem block to add more
+
+    \resumeItemListEnd
+
+ \vspace{-12pt}
+%
+
+%-----------Publications---------------
+\section{\color{airforceblue}PUBLICATIONS}
+
+  \resumeItemListStart
+    \resumeItem{\normalsize{Enhancing Disease Prediction using Symptom Based Machine Learning - }}\href{https://ieeexplore.ieee.org/document/10392166}{\color{blue}\underline{Link}}
+    \vspace{-5pt}
+
+    % \resumeItem{\normalsize{Add Publication details here}}\href{[url link to publication]}{\color{blue}\underline{Link}}
+    % \vspace{-5pt}
+
+    % copy and paste above resumeItem block to add more
+
+  \resumeItemListEnd
+
+\vspace{-8pt}
+
+%-----------EXTRACURRICULAR---------------
+\section{\color{airforceblue}EXTRACURRICULAR ACTIVITIES}
+
+      \resumeItemListStart
+        \resumeItem{\normalsize{\textbf{Publicity Head} at AISA VIIT - {June 2022 - May 2023} }}
+        \vspace{-5pt}
+        % copy and paste above resumeItem block to add more
+      \resumeItemListEnd
+
+\vspace{-12pt}
+
+\end{document}
+
